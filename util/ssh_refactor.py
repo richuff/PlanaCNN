@@ -1,8 +1,7 @@
 import os
 
-
 class config:
-    def __init__(self, name, email,ssh_config_name="id_rsa"):
+    def __init__(self, name, email, ssh_config_name="id_rsa"):
         self.name = name
         self.email = email
         self.ssh_config_name = ssh_config_name
@@ -27,15 +26,10 @@ class config:
             for line in lines:
                 print(line, end="")
 
-
-plana = config("plana", "13058160568@163.com","plana_id_rsa")
+plana = config("plana", "13058160568@163.com", "plana_id_rsa")
 richu = config("richu", "1691401076@qq.com")
 
-if __name__ == '__main__':
-    # plana.setUser()
-    # plana.showUser()
-    richu.setUser()
-    richu.showUser()
+
 
 
 
