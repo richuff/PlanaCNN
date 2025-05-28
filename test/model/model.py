@@ -1,5 +1,6 @@
 # 模型的保存和模型的加载
 import torchvision
+import torch
 
 vgg16 = torchvision.models.vgg16(pretrained=False)
 # 保存方式一

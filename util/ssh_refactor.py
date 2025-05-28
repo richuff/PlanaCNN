@@ -20,14 +20,14 @@ class config:
         os.system('git config --global user.name')
         print("git global UserEmail", end=": ")
         os.system('git config --global user.email')
-        print("\ncurrent ssh\config: ")
+        print("\ncurrent ssh.config: ")
         with open(self.config_path, "r") as f:
             lines = f.readlines()
             for line in lines:
                 print(line, end="")
 
 plana = config("plana", "13058160568@163.com", "plana_id_rsa")
-richu = config("richu", "1691401076@qq.com")
+richu = config("richuff", "1691401076@qq.com")
 
 
 
